@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Hans Kendrick';
+    src: url(../HansKendrick-Regular/HansKendrick-Regular.otf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e2e7ec;
+    display: flex;
+    justify-content: center;
+    font-family: 'Hans Kendrick';
+}
+
+.flex-container {
+    width: 1140px;
+    min-width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+}
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    background-color: #fff;
+    height: 540px;
+    margin: 10px;
+}
+
+.avatar {
+
+    width: 54px;
+    height: 54px;
+    background-image: url(../images/small_avatar.png);
+    margin: 0 0 20px 20px;
+}
+
+.date {
+    color: gray;
+}
+
+.box h3,
+span {
+    text-transform: uppercase;
+    margin: 15px 0;
+    padding: 0 20px;
+}
+
+.box h3 {
+    flex-grow: 1;
+}
+
+.box:nth-of-type(1) {
+    width: 65%;
+    background-image: linear-gradient(to bottom, rgba(247, 241, 63, 0.085), rgba(0, 0, 0, 0.859)),
+        url(../images/car.png);
+    background-position: center;
+    max-width: 740px;
+    justify-content: flex-end;
+
+}
+
+.box:nth-of-type(1) h3 {
+    flex-grow: 0;
+}
+
+
+.box:nth-of-type(1) h3 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0 0 23px 0;
+    width: 75%;
+}
+
+.box:nth-of-type(2) {
+    width: 35%;
+    max-width: 360px;
+
+}
+
+.box:nth-of-type(3) {
+    width: 33%;
+    max-width: 360px;
+
+
+}
+
+.box:nth-of-type(4) {
+    width: 33%;
+    max-width: 360px;
+
+}
+
+.box:nth-of-type(5) {
+    width: 33%;
+    max-width: 360px;
+
+}
+
+.bottom {
+    margin-top: 85px;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 0.33px;
+    color: gray;
+}

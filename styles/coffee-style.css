@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Miso';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Miso'), url('../miso-cufonfonts-webfont/miso.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Miso Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Miso Bold'), url('../miso-cufonfonts-webfont/miso-bold.woff') format('woff');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Miso';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cups-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(252, 216, 107);
+    min-height: 620px;
+    max-width: 90vw;
+    border-radius: 2px;
+    padding: 28px;
+}
+
+.cup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 367px;
+    height: 446px;
+    border-radius: 2px;
+    background-color: #fff;
+    margin: 28px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.cup svg {
+    margin-bottom: 30px;
+}
+
+.cup .price {
+    margin-bottom: 20px;
+    font-family: 'Miso Bold';
+    font-size: 70px;
+    color: #02995b;
+    letter-spacing: 1.75px;
+}
+
+.cup h3 {
+    font-family: Miso;
+    font-size: 56px;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.cup .price-text {
+    text-align: center;
+    width: 115px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.09px;
+    opacity: 0.6;
+}
+
+.cup:hover {
+    cursor: pointer;
+    height: 500px;
+    transition: ease-in-out 0.2s;
+}
